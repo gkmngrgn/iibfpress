@@ -1,7 +1,7 @@
 /*  
 Theme Name: ogu_iibf
 Description: Ogu iibf theme for Wordpress
-Version: 0.1
+Version: 0.2
 Author: Gökmen Görgen
 Author URI: http://www.gokmengorgen.net
 */
@@ -85,6 +85,49 @@ h2 {
     vertical-align:top;
     display:table-row; 
     text-align:left; 
+}
+
+.table_row h2 {
+    padding: 5px 10px;
+    color: #00357A;
+    font-size: 18px;
+    border-bottom: 1px dashed #00357A;
+}
+
+.table_row p {
+    vertical-align:top;
+    padding: 10px;
+    line-height:1.21em;
+}
+
+.table_row img {
+    max-width: 570px;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.table_row a {
+    color: #00357A;
+    text-decoration: none;
+}
+
+
+.table_row a:hover {
+    text-decoration: underline;
+}
+
+.table_row table {
+    width: 100%;
+}
+
+.table_row td {
+    padding: 5px 10px;
+    border-bottom: 1px dashed #ccc;
+    vertical-align: top;
+}
+
+.table_row td.no {
+    text-align:center;
 }
 
 .left {
@@ -215,27 +258,6 @@ h2 {
 
 .edit a {
     color: #00357A;
-}
-
-.content_txt {
-	vertical-align:top;
-    padding: 10px;
-	line-height:1.21em;
-}
-
-.content_txt p {
-    padding: 0;
-    margin: 0;
-}
-
-.content_txt a {
-    color: #00357A;
-    text-decoration: none;
-}
-
-
-.content_txt a:hover {
-    text-decoration: underline;
 }
 
 .comment {

@@ -23,4 +23,3 @@ if  ((navigator.appName == "Microsoft Internet Explorer") && (navigator.userAgen
             <div class="sub_main">
                 <div class="table">
                     <div class="table_row">
-                        <div class="left">
