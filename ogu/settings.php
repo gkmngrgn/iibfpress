@@ -10,7 +10,7 @@ $jsDir = $url . "/js";
 $imageDir = $url . "/images";
 
 function about() {
-    include('about.php');
+    include('pages/about.php');
 }
 
 function contact() {
