@@ -1,5 +1,5 @@
 <div class="left">
-    <h3>Arama Yap</h3>
+    <!--<h3>Arama Yap</h3>
     <form action="http://www.google.com.tr/cse" id="cse-search-box">
         <div>
             <input type="hidden" name="cx" value="partner-pub-0952188451968791:ut3pov-bpwi"/>
@@ -8,7 +8,7 @@
             <input type="submit" name="sa" value="Ara" />
         </div>
     </form>
-    <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=tr"></script>
+    <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=tr"></script>-->
 
     <ul id="vmenu">
         <li>

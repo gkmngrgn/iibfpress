@@ -1,5 +1,6 @@
 <!-- First of all, i'm importing generic variables, functions, etc.-->
 <?php include('settings.php'); ?>
+<?php include('functions.php'); ?>
 
 <!-- And importing header, sidebar.. -->
 <?php include('header.php'); ?>

@@ -3,34 +3,12 @@
 $title = "İktisadi ve İdari Bilimler Fakültesi - Eskişehir Osmangazi Üniversitesi";
 $charset = "UTF-8";
 
-$url = "http://localhost/~gkmngrgn/ogu";
+$url = "http://www.gokmengorgen.net/ogu";
 
 $currentUrl = "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
 
 $cssDir = $url . "/css";
 $jsDir = $url . "/js";
 $imageDir = $url . "/images";
-
-//define("WEBMASTER_EMAIL", 'gkmngrgn@gmail.com');
-
-function mainPage() {
-    include('pages/mainpage.php');
-}
-
-function administration() {
-    include('pages/administration.php');
-}
-
-function facmem() {
-    include('pages/facmem.php');
-}
-
-function lessons() {
-    include('pages/lessons.php');
-}
-
-function contact() {
-    echo "İletişim sayfası";
-}
 
 ?>

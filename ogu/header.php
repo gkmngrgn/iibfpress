@@ -8,6 +8,7 @@
 <script type="text/javascript" src="<?php echo $jsDir; ?>/jquery-1.2.6.min.js"></script>
 <script type="text/javascript" src="<?php echo $jsDir; ?>/hmenu.js"></script>
 <script type="text/javascript" src="<?php echo $jsDir; ?>/vmenu.js"></script>
+
 <script language="JavaScript" type="text/javascript">
 <!--
 if  ((navigator.appName == "Microsoft Internet Explorer") && (navigator.userAgent.indexOf ("Opera") == -1)) {
