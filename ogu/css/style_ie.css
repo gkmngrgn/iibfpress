@@ -1,18 +1,37 @@
 /* CSS Document */
 .left {
     float: left;
-    width: 207px;
+    width: 204px;
     border: none;
+    border-right: 3px solid #10ACC2;
+    display: table-cell;
+    height: 100%;
 }
 
 .table_row {
     border-left: 3px solid #10ACC2;
 }
 
+.table_row table {
+    font-size: 12px;
+}
+
+.table_row tr {
+    font-size: 12px;
+}
+
+.table_row td {
+    font-size: 12px;
+}
+
+.table_row img {
+    width: expression(Math.min(parseInt(this.offsetWidth), 570) + "px"); 
+}
+
 .right {
-    border-left: 3px solid #10ACC2;
     float: right;
     min-height: 1000px;
+    height: 100%;
 }
 
 p.edit {
@@ -33,7 +52,7 @@ li#vmenu a {
 }
 
 ul#vmenu, ul#vmenu ul {
-    width: 207px;
+    width: 204px;
 }
 
 ul#vmenu li {

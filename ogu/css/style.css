@@ -120,6 +120,14 @@ h2 {
     width: 100%;
 }
 
+.table_row tr {
+    background-color: #DDD;
+}
+
+.table_row tr.sec {
+    background-color: #D7DEE5;
+}
+
 .table_row td {
     padding: 5px 10px;
     border-bottom: 1px dashed #ccc;

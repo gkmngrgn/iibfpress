@@ -1,6 +1,6 @@
 <?php
 
-$title = "Eskişehir Osmangazi Üniversitesi - İktisadi ve İdari Bilimler Fakültesi";
+$title = "İktisadi ve İdari Bilimler Fakültesi - Eskişehir Osmangazi Üniversitesi";
 $charset = "UTF-8";
 
 $url = "http://localhost/~gkmngrgn/ogu";
