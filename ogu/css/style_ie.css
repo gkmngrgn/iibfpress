@@ -25,7 +25,8 @@
 }
 
 .table_row img {
-    width: expression(Math.min(parseInt(this.offsetWidth), 570) + "px"); 
+    /*width: expression(Math.min(parseInt(this.offsetWidth), 570) + "px"); */
+    width: expression(this.width > 570 ? 570: true);
 }
 
 .right {

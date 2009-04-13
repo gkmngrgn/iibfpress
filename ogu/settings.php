@@ -11,6 +11,8 @@ $cssDir = $url . "/css";
 $jsDir = $url . "/js";
 $imageDir = $url . "/images";
 
+//define("WEBMASTER_EMAIL", 'gkmngrgn@gmail.com');
+
 function mainPage() {
     include('pages/mainpage.php');
 }
