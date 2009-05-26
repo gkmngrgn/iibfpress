@@ -1,0 +1,412 @@
+/*  
+Theme Name: ogu_iibf
+Description: Ogu iibf theme for Wordpress
+Version: 0.1
+Author: Gökmen Görgen
+Author URI: http://www.gokmengorgen.net
+*/
+
+body  {
+    padding: 0;
+    margin: 0;
+    background: #fff url('images/back.png') repeat-x top left;
+    font-family: bitstreamverasans, dejavusans, sans-serif, verdana;
+}
+
+p {
+    margin: 0px;
+    padding: 10px 0;
+    font-family: bitstreamverasans, dejavusans, sans-serif, verdana;
+}
+
+a {
+    color: #10ACC2;
+    text-decoration: none
+}
+
+a:hover {
+    color: #10ACC2;
+}
+
+html {
+    font-size:12px;
+}
+
+.normal {
+    font-size:  1.01em;
+}
+
+.big {
+    font-size:1.11em; 
+}
+
+.small {
+    font-size:0.91em;
+}
+
+h1 {
+    font-size: 2.01em;
+    font-weight: normal;
+    line-height: 1.01em;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.01em;
+    padding: 0px;
+    margin: 0px;
+} 
+
+#respond { 
+    font-size: 1.01em;
+    padding: 0px;
+    margin:0px;
+}
+
+.main_div {
+    width:800px;
+    vertical-align:top;
+    text-align:left;
+}
+
+.sub_main {
+    margin:0px;
+    width:800px;
+}
+.table { 
+    width:800px; 
+    display:table; 
+    text-align:left; 
+} 
+.table_row { 
+    width:800px;
+    height:100%; 
+    vertical-align:top;
+    display:table-row; 
+    text-align:left; 
+}
+
+.left {
+    margin: 0;
+    padding-top: 180px;
+    background: #fff url("images/iibf.png") no-repeat top center;
+    vertical-align: top;
+    text-align: left;
+    display: table-cell;
+    border-left: 3px solid #10ACC2;
+    border-right: 3px solid #10ACC2;
+}
+
+.left h3 {
+    margin: 20px 0 0 0;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #333;
+    border-bottom: 1px dashed #10ACC2;
+}
+
+.left ul {
+    margin: 0 0 10px 0;
+    padding: 5px 10px;
+    list-style-type: none;
+}
+
+.left li {
+    margin: 0;
+    padding: 0;
+}
+
+.left li a {
+    color: #00357A;
+}
+
+.left li a:hover {
+    text-decoration: underline;
+}
+
+.right {
+    width:590px;
+    background-color: #fff;
+    text-align:justify;
+    display:table-cell;
+}
+
+.footer {
+    padding: 5px 2px;
+    margin: 10px 0 0 0;
+    border-top: 1px solid #10ACC2;
+    text-align: right;
+    color: #595959;
+    line-height: 1.21em;
+}
+
+.footer p {
+    padding: 0;
+    font-size: 11px;
+}
+
+.footer a {
+    color: #00357A;
+}
+
+.footer a:hover {
+    color: #00357A;
+    text-decoration: underline;
+}
+
+.right_top {
+    background:url('images/header.png') right top no-repeat;
+    height:128px;
+    width:590px;
+}
+
+.table1 { 
+    width:590px; 
+    vertical-align:top;
+    display:table; 
+    text-align:left; 
+}
+
+.table_row1 {
+	width:590px;
+	height:100%;
+	vertical-align:top;
+	display:table-row;
+	text-align:left;
+}
+
+.head {
+    padding:10px;
+    font-size: 18px;
+}
+
+.head h2 {
+    border-bottom: 1px dashed #00357A;
+    padding-left: 3px;
+}
+
+.head a {
+    color: #00357A;
+    text-decoration: none;
+}
+
+.head a:hover {
+    color: #3465A4;
+}
+
+.date {
+    color: #00357A;
+    padding: 0 10px;
+    text-align: right;
+    float: right;
+}
+
+.date:before {
+    content: "Yayın Tarihi: \0020";
+}
+
+.edit {
+    font-weight: bold;
+    background-color: #ddd;
+    border: 1px solid #444;
+    margin: 0 0 0 10px;
+    padding: 2px 5px;
+    float: left;
+}
+
+.edit a {
+    color: #00357A;
+}
+
+.content_txt {
+	vertical-align:top;
+    padding: 10px;
+	line-height:1.21em;
+}
+
+.content_txt p {
+    padding: 0;
+    margin: 0;
+}
+
+.content_txt a {
+    color: #00357A;
+    text-decoration: none;
+}
+
+
+.content_txt a:hover {
+    text-decoration: underline;
+}
+
+.comment {
+    font-size: 0.91em;
+    padding: 10px;
+}
+
+ol.commentlist {
+    list-style-type: none;
+    padding: 0;
+}
+
+ol.commentlist li {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #10ACC2;
+    background-color: #F9FAFF;
+}
+
+#commentform {
+    padding: 0;
+    font-family: bitstreamverasans, verdana, sans-serif;
+}
+
+#commentform textarea {
+    width: 85%;
+    height: 120px;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.table2 { 
+	width:440px; 
+	vertical-align:top;
+	display:table; 
+	text-align:left; 
+} 
+.table_row2 { 
+	width:440px; 
+	height:100%; 
+	vertical-align:top;
+	display:table-row; 
+	text-align:left; 
+}
+
+/* For Google Search */
+#cse-search-box {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.cse-search-box {
+    border: 1px solid #888;
+    padding: 2px;
+}
+
+/* For Previous - Next Navigation Links */
+.navigation {
+    text-align: center;
+    font-family: bitstreamverasans, verdana, sans-serif;
+}
+
+.navigation a {
+    color: #00357A;
+}
+
+.navigation a:hover {
+    color: #6C6D9D;
+}
+
+.alignleft, .alignright {
+    margin: 5px 10px;
+    padding: 5px;
+    background-color: #ddd;
+}
+
+.alignleft {
+    float: left;
+    border: 1px solid #10ACC2;
+}
+
+.alignright {
+    float: right;
+    border: 1px solid #10ACC2;
+}
+
+/* For Horizontal Menu */
+#hmenu {
+    font-size: 12px;
+    font-family: bitstreamverasans, dejavusans, verdana, sans-serif;
+    height: 50px;
+}
+
+#hmenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#hmenu li {
+    float: left;
+    width: 118px;
+    margin: 0 0 10px 0;
+    padding: 0;
+    text-align: center;
+}
+
+#hmenu li a {
+    display: block;
+    padding: 5px 10px;
+    height: 100%;
+    color: #FFF;
+    text-decoration: none;
+    border-right: 1px solid #10ACC2;
+}
+
+#hmenu li a:hover, #hmenu li a:focus, #hmenu li a:active {
+    background-position:-150px 0;
+}
+
+#hmenu a {
+    background: url('images/hmenubg.jpg') repeat -20px 35px;
+}
+
+/* For Vertical Menu */
+#vmenu p {
+    line-height: 1.5em;
+}
+
+ul#vmenu, ul#vmenu ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    width: 210px;
+}
+
+ul#vmenu a {
+  display: block;
+  text-decoration: none;
+}
+
+ul#vmenu li {
+  margin-top: 1px;
+}
+
+ul#vmenu li a {
+  background: #4E9A98;
+  color: #fff;
+  padding: 0.5em;
+  font-weight: bold;
+}
+
+ul#vmenu li a:hover {
+  background: #8FC7CD;
+}
+
+ul#vmenu li ul li a {
+  background: #BACFC9;
+  color: #444;
+  padding-left: 20px;
+  font-weight: normal;
+}
+
+ul#vmenu li ul li a:hover {
+  background: #C5CFCC;
+  border-left: 5px #4E9A98 solid;
+  padding-left: 15px;
+}
+
+/* For Search Form */

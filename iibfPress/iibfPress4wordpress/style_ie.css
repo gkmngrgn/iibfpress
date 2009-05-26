@@ -1,0 +1,53 @@
+/* CSS Document */
+.left {
+    float: left;
+    width: 207px;
+    border: none;
+}
+
+.table_row {
+    border-left: 3px solid #10ACC2;
+}
+
+.right {
+    border-left: 3px solid #10ACC2;
+    float: right;
+    min-height: 1000px;
+}
+
+p.edit {
+    margin: 0 0 0 5px;
+    padding: 3px;
+}
+
+ol.commentlist {
+    margin: 0;
+}
+
+li#vmenu a {
+    display: inline-block;
+}
+
+li#vmenu a {
+    display: block;
+}
+
+ul#vmenu, ul#vmenu ul {
+    width: 207px;
+}
+
+ul#vmenu li {
+    display: inline-block;
+}
+
+ul#vmenu li {
+    display: block;
+}
+
+ul#vmenu li a {
+    display: inline-block;
+}
+
+ul#vmenu li a {
+    display: block;
+}
