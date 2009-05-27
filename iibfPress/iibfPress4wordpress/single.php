@@ -12,9 +12,6 @@
                     <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h2>
                 </div>
                 <div class="right1">
-                    <div class="date">
-                        <?php the_time('d.m.Y') ?>
-                    </div>
                     <?php edit_post_link(__('Edit'), '<p class="edit">', '</p>'); ?>
                     <?php if ( $user_ID ) { ?>
                         <p class="edit">
@@ -27,8 +24,6 @@
         <div class="content_txt">
             <?php the_content('<p>Bu başlığın devamını okuyun &raquo;</p>'); ?>
         </div>
-
-        <?php comments_template(); ?>
 
     <?php endwhile; else: ?>
         <p><?php _e('Sorry, no posts matched your criteria.') ?></p>

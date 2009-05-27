@@ -12,18 +12,11 @@
                 <div class="head">
                     <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h2>
                 </div>
-                <div class="date">
-                    <?php the_time('d.m.Y') ?>
-                </div>
             </div>
         </div>
 
     <div class="content_txt">
         <?php the_content('Read the rest of this entry &raquo;'); ?>
-    </div>
-
-    <div class="comment">
-        <a href="<?php comments_link(); ?>"><?php _e("Comments")?></a> (<?php comments_number('0', '1', '%', 'number'); ?>)
     </div>
 
 <?php endwhile; ?>

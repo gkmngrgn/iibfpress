@@ -1,5 +1,5 @@
 /*  
-Theme Name: ogu_iibf
+Theme Name: iibfPress
 Description: Ogu iibf theme for Wordpress
 Version: 0.1
 Author: Gökmen Görgen
@@ -85,6 +85,53 @@ h2 {
     vertical-align:top;
     display:table-row; 
     text-align:left; 
+}
+
+.table_row h2 {
+    padding: 5px;
+    color: #00357A;
+    font-size: 18px;
+    border-bottom: 1px dashed #00357A;
+}
+
+.table_row p {
+    vertical-align:top;
+    padding: 10px;
+    line-height:1.21em;
+}
+
+.table_row img {
+    max-width: 550px;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.table_row table {
+    width: 100%;
+}
+
+.table_row tr {
+    background-color: #DDD;
+}
+
+.table_row tr.sec {
+    background-color: #D7DEE5;
+}
+
+.table_row td {
+    padding: 5px 10px;
+    border-bottom: 1px dashed #ccc;
+    vertical-align: top;
+}
+
+.table_row td.no {
+    text-align:center;
+}
+
+.table_row td.available {
+    padding-left: 30px;
+    background: #DDD url('images/download.gif') top left no-repeat;
+    width: 15%;
 }
 
 .left {
@@ -178,13 +225,13 @@ h2 {
 }
 
 .head {
-    padding:10px;
+    padding:0px;
     font-size: 18px;
 }
 
 .head h2 {
     border-bottom: 1px dashed #00357A;
-    padding-left: 3px;
+    padding-left: 5px;
 }
 
 .head a {
@@ -203,10 +250,6 @@ h2 {
     float: right;
 }
 
-.date:before {
-    content: "Yayın Tarihi: \0020";
-}
-
 .edit {
     font-weight: bold;
     background-color: #ddd;
@@ -222,12 +265,12 @@ h2 {
 
 .content_txt {
 	vertical-align:top;
-    padding: 10px;
+    padding: 5px;
 	line-height:1.21em;
 }
 
 .content_txt p {
-    padding: 0;
+    padding: 0 0 5px 0;
     margin: 0;
 }
 

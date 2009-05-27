@@ -26,12 +26,6 @@
         </ul>
     </li>
     <li>
-        <a href="#"><?php _e('Categories'); ?></a>
-        <ul>
-            <?php wp_list_categories('title_li='); ?>
-        </ul>
-    </li>
-    <li>
         <a href="#"><?php _e('Recent Posts'); ?></a>
         <ul>
             <?php

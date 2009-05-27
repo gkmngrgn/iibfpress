@@ -9,6 +9,11 @@
     border-left: 3px solid #10ACC2;
 }
 
+.table_row img {
+    /*width: expression(Math.min(parseInt(this.offsetWidth), 570) + "px"); */
+    width: expression(this.width > 570 ? 570: true);
+}
+
 .right {
     border-left: 3px solid #10ACC2;
     float: right;
