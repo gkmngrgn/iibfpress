@@ -20,11 +20,11 @@
     <?php
         $page = @$_GET['page'];
         if(!empty($page)) {
-            $page();
+            pages::$page();
         } else {
-            mainPage();
+            pages::mainPage();
         }
 
-        footer();
+        pages::footer();
     ?>
 </div>
