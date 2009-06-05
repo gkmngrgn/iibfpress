@@ -27,4 +27,3 @@
 
         pages::footer();
     ?>
-</div>
