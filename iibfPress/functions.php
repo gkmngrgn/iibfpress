@@ -1,31 +1,59 @@
 <?php
-class pages{
-    function mainPage() {
-        include('pages/mainpage.html');
-    }
 
-    function administration() {
-        include('pages/administration.html');
-    }
+/*-----------------------------------------------------------------------------
+	Widget Support
+-----------------------------------------------------------------------------*/
+if ( function_exists('register_sidebar') )
+    register_sidebar();
 
-    function facmem() {
-        include('pages/facmem.html');
-    }
-
-    function lessons() {
-        include('pages/lessons.html');
-    }
-
-    function contact() {
-        include('pages/contact.html');
-    }
-
-    function notices() {
-        include('pages/notices.html');
-    }
-
-    function footer() {
-        echo base64_decode('PC9kaXY+PC9kaXY+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0iZm9vdGVyIj48cD5TaXRlIFRhc2FyxLFtOiA8YSBocmVmPSJodHRwOi8vd3d3Lmdva21lbmdvcmdlbi5uZXQiPkfDtmttZW4gR8O2cmdlbjwvYT4uIEJpcnRha8SxbSBoYWtsYXIgPGEgaHJlZj0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbGljZW5zZXMvYnktbmMtc2EvMi41LyI+c2FrbMSxZMSxcjwvYT4uPC9wPjwvZGl2Pg==');
-    }
+/*-----------------------------------------------------------------------------
+	Display Post Template
+-----------------------------------------------------------------------------*/
+function getPost($post = NULL) {
+	include('post.php');
 }
+
+/*-----------------------------------------------------------------------------
+	Install Options - Not implemented yet
+-----------------------------------------------------------------------------
+if (!get_option('blueprint_installed')) {
+
+	add_option('blueprint_installed',
+						 $current, 
+						 'This options simply tells me if K2 has been installed before', 
+						 $autoload);
+
+	add_option('blueprint_aboutblurp', 
+						 'Enter your about text', 
+						 'Allows you to write a small blurp about you and your blog, which will be put on the frontpage', 
+						 $autoload);
+
+	add_option('blueprint_columns', 
+						 '12', 
+						 'The number of columns across the page (default is 12)', 
+						 $autoload);
+
+	add_option('blueprint_columns_content',
+						 '9', 
+						 'Number of columns the content (left side) takes up (default is 9, this and sidebar must add up to total column number)',
+							$autoload);
+
+	add_option('blueprint_column_sidebar',
+						 '3', 
+						'Number of columns the sidebar (right side) takes up (default is 3, this and left column must add up to total column number)',
+						$autoload);
+
+	add_option('blueprint_show_author',
+						 '0', 
+						'Show the author on posts? (Default: no)',
+						$autoload);
+
+	add_option('blueprint_show_tagline',
+						 '0', 
+						'Show the tagline under the site title? (Default: no)',
+						$autoload);
+
+}
+*/
+
 ?>

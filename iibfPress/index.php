@@ -1,29 +1,28 @@
-<!-- First of all, i'm importing generic variables, functions, etc.-->
-<?php include('settings.php'); ?>
-<?php include('functions.php'); ?>
+<?php get_header(); ?>
 
-<!-- And importing header, sidebar.. -->
-<?php include('header.php'); ?>
-<?php include('sidebar.php'); ?>
-
-<div class="right">
-    <div class="right_top"><!-- For Header Image --></div>
-
-    <!-- For horizontal menu -->
-    <div id="hmenu">
-        <ul>
-            <li><a href="<?php echo $url ?>/">Ana Sayfa</a></li>
-            <?php include('menu.php'); ?>
-        </ul>
-    </div>
+<div class="span-18 prepend-top append-bottom last" id="page">
+  <div class="content">
 
     <?php
-        $page = @$_GET['page'];
-        if(!empty($page)) {
-            pages::$page();
-        } else {
-            pages::mainPage();
-        }
 
-        pages::footer();
+       //$my_query = new WP_Query('showposts=8');
+       //while ($my_query->have_posts()) : $my_query->the_post();
+
+    // Don't show featured item
+    //if ($post->ID == $featuredID) continue;
+
+    while (have_posts()) : the_post();
+
     ?>
+
+    <?php getPost($post); ?>
+
+    <?php endwhile; ?>
+
+    <div class="alignleft"><?php next_posts_link('&laquo; Previous Entries') ?></div>
+    <div class="alignright"><?php previous_posts_link('Next Entries &raquo;') ?></div>
+  </div> <!-- /content -->
+
+</div> <!-- /page -->
+
+<?php get_footer(); ?>

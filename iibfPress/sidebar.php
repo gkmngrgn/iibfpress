@@ -1,48 +1,72 @@
-<div class="left">
-    <h3>Arama Yap</h3>
-    <form action="http://www.google.com.tr/cse" id="cse-search-box">
-        <div>
-            <input type="hidden" name="cx" value="partner-pub-0952188451968791:ut3pov-bpwi"/>
-            <input type="hidden" name="ie" value="UTF-8" />
-            <input type="text" name="q" size="15" class="cse-search-box"/>
-            <input type="submit" name="sa" value="Ara" />
-        </div>
-    </form>
-    <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=tr"></script>
+<div class="span-6 first">
+  <div id="sidebar">
+    <ul>
+    <li class="s">
+      <?php include (TEMPLATEPATH . '/searchform.php'); ?>
+    </li>
 
-    <ul id="vmenu">
-        <li>
-            <a href="#">Bölümler</a>
-            <ul>
-                <li><a href="http://iibf.ogu.edu.tr/isletme">İşletme</a></li>
-                <li><a href="http://iibf.ogu.edu.tr/iktisat">İktisat</a></li>
-                <li><a href="http://iibf.ogu.edu.tr/maliye">Maliye</a></li>
-                <li><a href="http://iibf.ogu.edu.tr/uluslar">Uluslararası İlişkiler</a></li>
-            </ul>
-        </li>
+    <!-- Author information is disabled per default. Uncomment and fill in your details if you want to use it.
+	 <li><h2>Author</h2>
+	   <p>A little something about you, the author. Nothing lengthy, just an overview.</p>
+	 </li>
+	 -->
 
-        <li>
-            <a href="#">Sayfalar</a>
-            <ul>
-                <?php include('menu.php'); ?>
-            </ul>
-        </li>
-        <li><a href="http://iibf.ogu.edu.tr/dergi">İİBF Dergisi</a></li>
-        <li><a href="http://iibf.ogu.edu.tr/karmer">Kariyer Merkezi</a></li>
-        <li><a href="http://193.140.141.9:7777/pls/osmangaziuniversitesibilgisistemi/asp.home">Öğrenci Bilgi Sistemi</a></li>
-    </ul>
+    <?php if ( is_404() || is_category() || is_day() || is_month() ||
+	  is_year() || is_search() || is_paged() ) {
+	  ?> <li>
 
-    <h3>Duyurular</h3>
-    <div id="notice">
-        <ul>
-            <!--<marquee direction="up" height="150px">-->
-                <?php notices() ?>
-            <!--</marquee>-->
-        </ul>
-    </div>
+      <?php /* If this is a 404 page */ if (is_404()) { ?>
+      <?php /* If this is a category archive */ } elseif (is_category()) { ?>
+      <p>You are currently browsing the archives for the <?php single_cat_title(''); ?> category.</p>
+
+      <?php /* If this is a yearly archive */ } elseif (is_day()) { ?>
+      <p>You are currently browsing the <a href="<?php bloginfo('url'); ?>/"><?php echo bloginfo('name'); ?></a> weblog archives
+	for the day <?php the_time('l, F jS, Y'); ?>.</p>
+
+      <?php /* If this is a monthly archive */ } elseif (is_month()) { ?>
+      <p>You are currently browsing the <a href="<?php bloginfo('url'); ?>/"><?php echo bloginfo('name'); ?></a> weblog archives
+	for <?php the_time('F, Y'); ?>.</p>
+
+      <?php /* If this is a yearly archive */ } elseif (is_year()) { ?>
+      <p>You are currently browsing the <a href="<?php bloginfo('url'); ?>/"><?php echo bloginfo('name'); ?></a> weblog archives
+	for the year <?php the_time('Y'); ?>.</p>
+
+      <?php /* If this is a monthly archive */ } elseif (is_search()) { ?>
+      <p>You have searched the <a href="<?php echo bloginfo('url'); ?>/"><?php echo bloginfo('name'); ?></a> weblog archives
+	for <strong>'<?php the_search_query(); ?>'</strong>. If you are unable to find anything in these search results, you can try one of these links.</p>
+
+      <?php /* If this is a monthly archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
+      <p>You are currently browsing the <a href="<?php echo bloginfo('url'); ?>/"><?php echo bloginfo('name'); ?></a> weblog archives.</p>
+
+      <?php } ?>
+
+    </li> <?php }?>
+
+
+
+
+
+    <li><h2>Arşiv</h2>
+      <ul>
+	<?php wp_get_archives('type=monthly'); ?>
+      </ul>
+    </li>
+
+    <?php wp_list_categories('show_count=0&title_li=<h2>Kategoriler</h2>'); ?>
+    <?php wp_list_bookmarks('title_li=<h2>Bağlantılar</h2>'); ?>
+  </ul>
+
+  <div id="contact">
+    <h3>İletişim</h3>
+    <p>Eskişehir Osmangazi Üniversitesi İktisadi ve İdari Bilimler Fakültesi Meşelik Kampüsü</p>
+    <p>26480 Eskişehir</p><br />
+    <p><strong>Tel:</strong> +90 222 223 25 23</p>
+    <p><strong>Fax:</strong> +90 222 229 25 27</p>
 
     <h3>Site Yönetimi</h3>
-    <ul>
-        <li><a href="mailto:gokmengorgen@yahoo.com.tr">Hata Bildir</a></li>
-    </ul>
+    <p><?php wp_loginout(); ?></p>
+    <p><?php wp_meta(); ?></p>
+    <p><a href="http://www.google.com/recaptcha/mailhide/d?k=014BUBWL9QnLGtpvtZG0a7RA==&c=F2t0xKKeNpbmga9Rqw4sH4ew6JVd04R1Hpacd3BWEqc=">Hata bildir</a></p>
+  </div>
 </div>
+</div><!-- /sidebar -->
