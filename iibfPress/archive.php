@@ -1,11 +1,7 @@
 <?php get_header(); ?>
 
+<div class="span-18 prepend-top last">
 <div id="page">
-
-	<div class="column span-9 first" id="maincontent">
-
-		<div class="content">
-
 		<?php if (have_posts()) : ?>
 
 		 <?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-<div class="span-18 prepend-top append-bottom last" id="page">
-    <div class="content">
+<div class="span-18 prepend-top append-bottom last">
+<div id="page">
 
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

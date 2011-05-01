@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
-<div class="span-18 prepend-top append-bottom last" id="page">
+<div class="span-18 prepend-top append-bottom last">
+<div id="page">
   <div class="content">
 
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -20,6 +21,7 @@
 
   <?php get_sidebar(); ?>
 
+</div>
 </div> <!-- /page -->
 
 <?php get_footer(); ?>
