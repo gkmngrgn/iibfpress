@@ -50,7 +50,6 @@
 	<?php endif; ?>
 
 	</div> <!-- /content -->
-</div> <!-- /maincontent-->
 
 <?php get_sidebar(); ?>
 
